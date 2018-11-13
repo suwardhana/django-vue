@@ -277,8 +277,6 @@
         getArticles: function() {
           let api_url = '/api/article/';
           if(this.search_term!==''||this.search_term!==null) {
-
-            console.log("kok true?");
             api_url = '/api/article/?search='+this.search_term+''
           }
           this.loading = true;
